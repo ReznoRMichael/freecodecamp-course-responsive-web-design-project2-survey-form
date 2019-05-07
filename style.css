@@ -1,0 +1,317 @@
+body
+{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    background-color: #303030;
+	background-image: url("https://reznor.tech/img/what-the-hex-dark-light.png"); /* Background pattern from Toptal Subtle Patterns */
+	background-size: 400px 400px;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+#title
+{
+    text-align: center;
+    margin: 40px auto;
+    color: rgb(255, 102, 0);
+}
+#form-container
+{
+    background-color: rgba(0, 0, 0, 0.07);
+    width: 70%;
+    max-width: 1280px;
+    margin: 40px auto;
+    border: 1px solid #FF6600;
+    border-radius: 15px;
+    padding: 15px;
+}
+#description
+{
+    text-align: center;
+}
+.input-fields
+{
+    height: 25px;
+    width: 254px;
+    padding: 6px;
+    margin: 10px;
+    outline: none;
+	background-color: #222222;
+	border: 2px solid #404040;
+	border-radius: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: inherit;
+	text-align: center;
+	outline: none;
+}
+.input-fields:hover
+{
+	color: white;
+	background-color: #222222;
+	border: 2px solid #505050;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+}
+.input-fields:focus
+{
+	color: white;
+	background-color: #222222;
+	border: 2px solid #FF6600;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+}
+.input-fields::-webkit-input-placeholder
+{
+	font-family: inherit;
+	font-size: 18px;
+    color: #404040;
+}
+.input-fields:focus::-webkit-input-placeholder
+{
+    color: #363636;
+}
+/* Firefox < 19 */
+.input-fields:-moz-placeholder
+{
+	font-family: inherit;
+	font-size: 18px;
+    color: #404040;
+}
+.input-fields:focus:-moz-placeholder
+{
+    color: #363636;
+}
+/* Firefox > 19 */
+.input-fields::-moz-placeholder
+{
+	font-family: inherit;
+	font-size: 18px;
+    color: #404040;
+}
+.input-fields:focus::-moz-placeholder
+{
+    color: #363636;
+}
+/* Internet Explorer 10 */
+.input-fields:-ms-input-placeholder
+{
+	font-family: inherit;
+	font-size: 18px;
+    color: #404040;
+}
+.input-fields:focus:-ms-input-placeholder
+{
+    color: #363636;
+}
+.input-textarea
+{
+    height: 50px;
+    resize: vertical;
+    text-align: left;
+}
+.dropdown
+{
+    height: 41px;
+    width: 270px;
+    padding: 6px;
+    margin: 10px;
+	background-color: #222222;
+	border: 2px solid #404040;
+	border-radius: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: inherit;
+	text-align: center;
+	outline: none;
+}
+.dropdown:hover
+{
+	color: white;
+	background-color: #222222;
+	border: 2px solid #505050;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+}
+.dropdown:focus
+{
+	color: white;
+	background-color: #222222;
+	border: 2px solid #FF6600;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+	box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
+}
+.labels
+{
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 40%;
+    padding: 6px;
+    margin-top: 10px;
+}
+.inputs
+{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 50%;
+}
+.radio, .checkbox
+{
+    position: relative;
+    display: block;
+    left: -40px;
+    padding: 4px;
+    margin-left: 10px;
+}
+input[type="checkbox"],
+input[type="radio"]
+{
+    margin-right: 10px;
+}
+.radio-label,
+.checkbox-label
+{
+    display: block;
+    position: relative;
+    padding: 0px 0px 0px 35px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.radiomark,
+.checkmark
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #505050;
+}
+.radiomark { border-radius: 50%; }
+
+/* Hide the browser's default checkbox */
+.radio-label input,
+.checkbox-label input
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* On mouse-over change background color */
+.radio-label:hover input ~ .radiomark,
+.checkbox-label:hover input ~ .checkmark
+{
+    background-color: #414141;
+}
+/* When the checkbox is checked change background color */
+.radio-label input:checked ~ .radiomark,
+.checkbox-label input:checked ~ .checkmark
+{
+    background-color: #FF6600;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.radiomark:after,
+.checkmark:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.radio-label input:checked ~ .radiomark:after,
+.checkbox-label input:checked ~ .checkmark:after
+{
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox-label .checkmark:after
+{
+    left: 8px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* Style the checkmark/indicator */
+.radio-label .radiomark:after
+{
+    top: 7px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+}
+#submit
+{
+    border: 0;
+    border-radius: 0;
+    margin: 15px auto;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #FF6600;
+	padding: 8px 20px;
+	color: #000;
+	line-height: 20px;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+	min-height: 20px;
+}
+#submit:hover
+{
+    background-color: #DD4400;
+	color: #000;
+    cursor: pointer;
+}
+#submit:focus
+{
+	outline: 2px solid #222;
+}
+
+
+@media (max-width: 768px)
+{
+    .input-fields
+    {
+        width: 90%;
+    }
+    .dropdown
+    {
+        width: 94%;
+    }
+    .inputs
+    {
+        width: 100%;
+        float: left;
+    }
+    select 
+    {
+        width: 90%;
+    }
+    .labels
+    {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reznor.tech - Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+    
+<h1 id="title">reznor.tech - Survey Form</h1>
+
+<div id="form-container">
+
+    <p id="description">How I can improve <strong>reznor.tech</strong>? Please let me know.</p>
+
+    <form id="survey-form" action="https://reznor.tech">
+    
+        <div class="rows">
+            <div class="labels">
+                <label for="name" id="name-label">* Your Name: </label>
+            </div>
+            <div class="inputs">
+                <input type="text" name="name" id="name" class="input-fields" placeholder="Please enter your name" required>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="email" id="email-label">* Your E-mail: </label>
+            </div>
+            <div class="inputs">
+                <input type="email" name="email" id="email" class="input-fields" placeholder="Please enter your e-mail" required>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="number" id="number-label">* Your Age: </label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="number" id="number" class="input-fields" placeholder="Please enter your age" min="1" max="110" required>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="dropdown" id="dropdown-label">What best describes your current position? </label>
+            </div>
+            <div class="inputs">
+                <select name="dropdown" id="dropdown" class="dropdown">
+                    <option disabled selected value="0">Select from the list</option>
+                    <option value="fulltimejob">Full time job</option>
+                    <option value="fulltimestudent">Full time student</option>
+                    <option value="student">Student</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="other">Other</option>
+                    <option value="notsay">Prefer not to say</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="recommendations">* How likely it is that you would recommend <strong>reznor.tech</strong>?</label>
+            </div>
+            <div class="inputs">
+                <ul style="list-style: none;">
+                    <li class="radio"><label class="radio-label"><input type="radio" name="radio-recommend" class="radio-recommend" value="verylikely"><span class="radiomark"></span>Very likely</label></li>
+                    <li class="radio"><label class="radio-label"><input type="radio" name="radio-recommend" class="radio-recommend" value="quitelikely"><span class="radiomark"></span>Quite likely</label></li>
+                    <li class="radio"><label class="radio-label"><input type="radio" name="radio-recommend" class="radio-recommend" value="maybe"><span class="radiomark"></span>Maybe</label></li>
+                    <li class="radio"><label class="radio-label"><input type="radio" name="radio-recommend" class="radio-recommend" value="nottoomuch"><span class="radiomark"></span>Not too much</label></li>
+                    <li class="radio"><label class="radio-label"><input type="radio" name="radio-recommend" class="radio-recommend" value="notatall"><span class="radiomark"></span>Not at all</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="dropdown-best">What do you like most on <strong>reznor.tech</strong>?</label>
+            </div>
+            <div class="inputs">
+                <select name="dropdown-best" id="dropdown-best" class="dropdown">
+                    <option disabled selected value="0">Select from the list</option>
+                    <option value="guides">Guides</option>
+                    <option value="tools">Web Tools/Programs</option>
+                    <option value="videos">Videos</option>
+                    <option value="news">News</option>
+                    <option value="articles">Articles</option>
+                    <option value="articles">Game Photography</option>
+                    <option value="notonlist">What I like the most is not on the list</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="preference">Things that could be improved in the future<br>(Select all that apply):</label>
+            </div>
+            <div class="inputs">
+                <ul id="preference" style="list-style: none;">
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="1"><span class="checkmark"></span>Guides</label></li>
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="2"><span class="checkmark"></span>Web Tools/Programs</label></li>
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="3"><span class="checkmark"></span>Videos</label></li>
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="4"><span class="checkmark"></span>News</label></li>
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="5"><span class="checkmark"></span>Articles</label></li>
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="6"><span class="checkmark"></span>Game Photography</label></li>
+                    <li class="checkbox"><label class="checkbox-label"><input type="checkbox" name="prefer" value="7"><span class="checkmark"></span>Screenshots</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rows">
+            <div class="labels">
+                <label for="comments">Any specific comments or suggestions for improvement?</label>
+            </div>
+            <div class="inputs">
+                <textarea name="comments" id="comments" class="input-fields input-textarea" placeholder="Enter your text here..."></textarea>
+            </div>
+        </div>
+        
+        <button id="submit" type="submit">Submit</button>
+    
+    </form>
+
+
+</div>
+
+</body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
