@@ -1,5 +1,5 @@
 # Learning HTML, CSS - Front-end Survey Form
-> Training course/bootcamp - freeCodeCamp ( [Link](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page) )
+> Training course/bootcamp - freeCodeCamp ( [Link](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form) )
 
 ## General info
 Responsive Web Design Projects - Build a Survey Form.
