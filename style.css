@@ -1,3 +1,12 @@
+:root
+{
+	--rt-main: #ff6600;
+	--rt-maind: #DD4400;
+    --rt-background: #ff6600;
+    --rt-main: #82b900;
+    --rt-maind: #628b00;
+	--rt-background: #181f1a;
+}
 body
 {
     color: #FFF;
@@ -6,8 +15,9 @@ body
     font-weight: 300;
     text-align: center;
     background-color: #303030;
-	background-image: url("https://reznor.tech/img/what-the-hex-dark-light.png"); /* Background pattern from Toptal Subtle Patterns */
-	background-size: 400px 400px;
+    background-color: var(--rt-background);
+	background-image: url("https://reznor.tech/projects/img/footer_lodyas_dgreen.png"); /* Background pattern from Toptal Subtle Patterns */
+	background-size: 1200px 1200px;
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -16,6 +26,7 @@ body
     text-align: center;
     margin: 40px auto;
     color: rgb(255, 102, 0);
+    color: var(--rt-main);
 }
 #form-container
 {
@@ -24,6 +35,7 @@ body
     max-width: 1280px;
     margin: 40px auto;
     border: 1px solid #FF6600;
+    border-color: var(--rt-main);
     border-radius: 15px;
     padding: 15px;
 }
@@ -39,6 +51,7 @@ body
     margin: 10px;
     outline: none;
 	background-color: #222222;
+	background-color: var(--rt-background);
 	border: 2px solid #404040;
 	border-radius: 0;
 	color: white;
@@ -51,7 +64,8 @@ body
 .input-fields:hover
 {
 	color: white;
-	background-color: #222222;
+    background-color: #222222;
+    background-color: var(--rt-background);
 	border: 2px solid #505050;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
@@ -60,8 +74,10 @@ body
 .input-fields:focus
 {
 	color: white;
-	background-color: #222222;
-	border: 2px solid #FF6600;
+    background-color: #222222;
+    background-color: var(--rt-background);
+    border: 2px solid #FF6600;
+    border-color: var(--rt-main);
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
 	box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
@@ -121,7 +137,8 @@ body
     width: 270px;
     padding: 6px;
     margin: 10px;
-	background-color: #222222;
+    background-color: #222222;
+    background-color: var(--rt-background);
 	border: 2px solid #404040;
 	border-radius: 0;
 	color: white;
@@ -134,7 +151,8 @@ body
 .dropdown:hover
 {
 	color: white;
-	background-color: #222222;
+    background-color: #222222;
+    background-color: var(--rt-background);
 	border: 2px solid #505050;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
@@ -143,8 +161,10 @@ body
 .dropdown:focus
 {
 	color: white;
-	background-color: #222222;
-	border: 2px solid #FF6600;
+    background-color: #222222;
+    background-color: var(--rt-background);
+    border: 2px solid #FF6600;
+    border-color: var(--rt-main);
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
 	box-shadow: 0px 0px 15px 0px rgba(64, 64, 64, 0.8);
@@ -224,6 +244,7 @@ input[type="radio"]
 .checkbox-label input:checked ~ .checkmark
 {
     background-color: #FF6600;
+    background-color: var(--rt-main);
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .radiomark:after,
@@ -270,6 +291,7 @@ input[type="radio"]
     font-weight: 400;
     font-size: 18px;
     background-color: #FF6600;
+    background-color: var(--rt-main);
 	padding: 8px 20px;
 	color: #000;
 	line-height: 20px;
@@ -281,6 +303,7 @@ input[type="radio"]
 #submit:hover
 {
     background-color: #DD4400;
+    background-color: var(--rt-maind);
 	color: #000;
     cursor: pointer;
 }
